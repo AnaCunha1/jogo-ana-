@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Jumper - Missão Neon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <div class="container">
+        <h1>CYBER JUMPER</h1>
+        
+        <div class="hud">
+            <span>ENERGIA: <strong id="pontos">0</strong></span>
+            <span>ESCUDOS: <strong id="vidas">3</strong></span>
+        </div>
+
+        <div class="canvas-wrapper">
+            <canvas id="jogoCanvas" width="800" height="450"></canvas>
+            
+            <div id="tela-fim" class="overlay escondido">
+                <h2 id="mensagem-fim">MISSÃO CONCLUÍDA!</h2>
+                <p id="pontuacao-final">Energia coletada: 0</p>
+                <button id="btn-reiniciar">REINICIAR SISTEMA</button>
+            </div>
+        </div>
+
+        <p class="instrucoes">
+            <strong>A / D</strong> ou <strong>Setas</strong> para mover • <strong>Espaço / W</strong> para pular (aperte 2x para <strong>Pulo Duplo</strong>!)
+        </p>
+
+        <footer>
+            <p>© 2026 AnaCunha1 • <a href="LICENSE">Licença MIT</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
